@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script defer src="index.js"></script>
+    <title>Tabs</title>
+</head>
+<body>
+    <ul>
+        <li data-tab-target="#milk" class="active">MILK(M)</li>
+        <li data-tab-target="#cream">CREAM(C)</li>
+        <li data-tab-target="#latte">LATTE(L)</li>
+    </ul>
+    <div class="tab-content" data->
+        <div id="milk" data-tab-content class="active">
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title">Espresso(M)</span>
+                    <img class="shop-item-image" src="images/espresso3-removebg-preview.png">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$60</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Cappuccino(M)</span>
+                    <img class="shop-item-image" src="images/Cappuccino_Chiang_Mai.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$80</span>
+                        <button class="btn btn-primary shop-item-button"type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Latte(M)</span>
+                    <img class="shop-item-image" src="images/capp.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$100</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+          </div>
+            </div>
+        <div id="cream" data-tab-content>
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title">Espresso(C)</span>
+                    <img class="shop-item-image" src="images/espresso2.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$75</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Cappuccion(C)</span>
+                    <img class="shop-item-image" src="images/cappuccino2-removebg-preview.png">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$90</span>
+                        <button class="btn btn-primary shop-item-button"type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Latte(C)</span>
+                    <img class="shop-item-image" src="images/latte2.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$125</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+          </div>
+        </div>
+        <div id="latte" data-tab-content>
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title">Espresso(L)</span>
+                    <img class="shop-item-image" src="images/espresso-removebg-preview.png">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$100</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Cappuccino(L)</span>
+                    <img class="shop-item-image" src="images\cappuccino-removebg-preview.png">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$125</span>
+                        <button class="btn btn-primary shop-item-button"type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Latte(L)</span>
+                    <img class="shop-item-image" src="images\latte.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$150</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+          </div>
+        </div>
+    </div>
+    <section class="container content-section">
+        <h1 class="section-header" style="text-align:center;">Bill Recipet</h1>
+        <div class="cart-row">
+            <span class="cart-item cart-header cart-column">ITEM List</span>
+            <span class="cart-price cart-header cart-column">PRICE</span>
+            <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+        </div>
+        <div class="cart-items">
+        </div>
+        <div class="cart-total">
+            <strong class="cart-total-title">Grand Total</strong>
+            <span class="cart-total-price">$0</span>
+        </div>
+        <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+    </section>
+</body>
+</html>
